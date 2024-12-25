@@ -27,7 +27,8 @@ section {
   justify-content: space-around;
   align-items: flex-end;
   overflow: hidden;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+}
 
 .snowman {
   width: 280px;
@@ -340,7 +341,7 @@ section {
   height: 50vh;
   aspect-ratio: 1 / 1;
   overflow: visible;
-  transform: scale(0.8) translateY(-85px); 
+  transform: scale(0.8) translateY(-85px);
   z-index: 2;
 }
 
@@ -497,4 +498,25 @@ section {
   opacity: 1;
   color: #3f3030;
   transition: all 0.3s ease;
+}
+
+.music-control {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  z-index: 1000;
+}
+
+#toggle-music {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease;
+}
+
+#toggle-music:hover {
+  transform: scale(1.1);
 }

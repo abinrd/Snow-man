@@ -154,3 +154,19 @@ function createSparkles() {
 
 createSparkles();
 
+const backgroundMusic = document.getElementById('background-music');
+const toggleMusicButton = document.getElementById('toggle-music');
+let isMusicPlaying = false;
+
+function toggleMusic() {
+    if (isMusicPlaying) {
+        backgroundMusic.pause();
+        toggleMusicButton.textContent = '🔇';
+    } else {
+        backgroundMusic.play();
+        toggleMusicButton.textContent = '🔊';
+    }
+    isMusicPlaying = !isMusicPlaying;
+}
+
+toggleMusicButton.addEventListener('click', toggleMusic);
